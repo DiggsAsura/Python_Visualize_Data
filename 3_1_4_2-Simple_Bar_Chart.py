@@ -1,7 +1,7 @@
 # 3. Graphing in Python
 # 1. Graphing in Python: Matplotlib
 # 4. Different Plot Types
-# 12. Simple Bar Chart
+# 2. Simple Bar Chart
 
 '''
 The plt.bar function allows you to create simple bar charts to compare multiple

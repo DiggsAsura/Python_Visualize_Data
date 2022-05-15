@@ -24,6 +24,7 @@ Ds = [2, 3, 3, 2, 1]
 Fs = [1, 0, 0, 3, 0]
 
 x = range(5)
+
 c_bottom = np.add(As, Bs)
 d_bottom = np.add(c_bottom, Cs)
 f_bottom = np.add(d_bottom, Ds)
@@ -32,7 +33,19 @@ plt.figure(figsize=(10,8))
 
 #ALWAYS remember, needs both X and Y (i forget what to put in lol)
 plt.bar(x, As)
-plt.bar(x, Bs, bottom=)
+plt.bar(x, Bs, bottom=As)
+plt.bar(x, Cs, bottom=c_bottom)
+plt.bar(x, Ds, bottom=d_bottom)
+plt.bar(x, Fs, bottom=f_bottom)
 
+ax = plt.subplot()
+ax.set_xticks(range(len(unit_topics)))
+ax.set_xticklabels(unit_topics)
+plt.title('Grade distribution')
+plt.legend(unit_topics)
+plt.ylabel('Number of Students')
+plt.xlabel('Unit')
+
+plt.savefig('3_1_7_4-my_stacked_bar.png')
 
 plt.show()

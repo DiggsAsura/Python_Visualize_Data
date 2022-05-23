@@ -140,6 +140,12 @@ The ability to use easily choose different color palettes is one of the importan
 For more on using color in Seaborn, check out their documentation.
 
 
+read this
+
+
+https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=color
+
+
 
 
 
